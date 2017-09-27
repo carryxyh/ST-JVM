@@ -20,3 +20,16 @@ FullGC仅仅表示这次GC过程中发生了STW，而一般的GC则表示没有�
 
 #### 空间分配担保
 minor gc之前，虚拟机会先检查`老年代最大可用的连续空间`是否大于`新生代所有对象总大小`，如果大于，那么minor gc就是安全的。如果小于，那么会查看`XX:HandlePromotionFailure`设置值是否允许担保失败，如果允许，那么会检查老年代`最大可用的连续空间`是否大于`历次晋升到老年代对象的平均大小`。如果大于，尝试进行一次minor gc，虽然有风险，如果小于或者设置不允许冒险，改为进行一次Full gc。
+
+#### 类的加载
+虚拟机规定5种必须初始化类的情况（当然加载、验证、准备、解析都在初始化之前也必须进行）：
+1.遇到new、getstatic、putstatic或invokestatic这4条字节码指令时，没有初始化就必须初始化。
+2.使用java.lang.reflect包的方法对类进行反射调用的时候。
+3.当初始化一个类的时候，父类未初始化，则先初始化父类
+4.main函数的类必须初始化
+5.如果一个java.lang.invoke.MethodHandle实例最后的解析结果是REF_getStatic、REF_putStatic、REF_invokeStaitc的时候。这是对动态语言的支持。
+
+
+
+
+
