@@ -29,7 +29,6 @@ minor gc之前，虚拟机会先检查`老年代最大可用的连续空间`是�
 4.main函数的类必须初始化
 5.如果一个java.lang.invoke.MethodHandle实例最后的解析结果是REF_getStatic、REF_putStatic、REF_invokeStaitc的时候。这是对动态语言的支持。
 
-
-
-
-
+#### 关于YGC
+这里就不班门弄斧了，直接从狼神的文章中copy一张图下来，可以说是非常的明白：
+![ygc](/YGC.png)
