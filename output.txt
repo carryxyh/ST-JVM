@@ -1,0 +1,40 @@
+test tcpdump
+
+17:01:41.066019 IP 10.1.66.73.60557 > 183.232.24.117.http: Flags [S], seq 3904464188, win 65535, options [mss 1460,nop,wscale 5,nop,nop,TS val 853324001 ecr 0,sackOK,eol], length 0
+17:01:41.066079 IP 10.1.66.73.60558 > 183.232.24.117.http: Flags [S], seq 2285806707, win 65535, options [mss 1460,nop,wscale 5,nop,nop,TS val 853324001 ecr 0,sackOK,eol], length 0
+17:01:41.101804 IP 183.232.24.117.http > 10.1.66.73.60558: Flags [S.], seq 3523333412, ack 2285806708, win 14480, options [mss 1300,sackOK,TS val 2347066302 ecr 853324001,nop,wscale 7], length 0
+17:01:41.101805 IP 183.232.24.117.http > 10.1.66.73.60557: Flags [S.], seq 3670730512, ack 3904464189, win 14480, options [mss 1300,sackOK,TS val 2347066301 ecr 853324001,nop,wscale 7], length 0
+17:01:41.101821 IP 10.1.66.73.60558 > 183.232.24.117.http: Flags [.], ack 1, win 4105, options [nop,nop,TS val 853324033 ecr 2347066302], length 0
+17:01:41.101836 IP 10.1.66.73.60557 > 183.232.24.117.http: Flags [.], ack 1, win 4105, options [nop,nop,TS val 853324033 ecr 2347066301], length 0
+17:01:41.268573 IP 10.1.66.73.60558 > 183.232.24.117.http: Flags [P.], seq 1:391, ack 1, win 4105, options [nop,nop,TS val 853324191 ecr 2347066302], length 390
+17:01:41.298293 IP 183.232.24.117.http > 10.1.66.73.60558: Flags [.], ack 391, win 122, options [nop,nop,TS val 2347066504 ecr 853324191], length 0
+17:01:41.298757 IP 183.232.24.117.http > 10.1.66.73.60558: Flags [P.], seq 1:301, ack 391, win 122, options [nop,nop,TS val 2347066505 ecr 853324191], length 300
+17:01:41.298791 IP 10.1.66.73.60558 > 183.232.24.117.http: Flags [.], ack 301, win 4096, options [nop,nop,TS val 853324219 ecr 2347066505], length 0
+17:01:41.300817 IP 10.1.66.73.60562 > 183.232.24.115.http: Flags [S], seq 12946356, win 65535, options [mss 1460,nop,wscale 5,nop,nop,TS val 853324221 ecr 0,sackOK,eol], length 0
+17:01:41.300932 IP 10.1.66.73.60563 > 183.232.24.115.http: Flags [S], seq 59135177, win 65535, options [mss 1460,nop,wscale 5,nop,nop,TS val 853324221 ecr 0,sackOK,eol], length 0
+17:01:41.327900 IP 183.232.24.117.http > 10.1.66.73.60558: Flags [P.], seq 301:479, ack 391, win 122, options [nop,nop,TS val 2347066534 ecr 853324219], length 178
+17:01:41.327934 IP 10.1.66.73.60558 > 183.232.24.117.http: Flags [.], ack 479, win 4090, options [nop,nop,TS val 853324247 ecr 2347066534], length 0
+17:01:41.329381 IP 183.232.24.115.http > 10.1.66.73.60563: Flags [S.], seq 471014952, ack 59135178, win 14480, options [mss 1300,sackOK,TS val 2241431756 ecr 853324221,nop,wscale 7], length 0
+17:01:41.329402 IP 10.1.66.73.60563 > 183.232.24.115.http: Flags [.], ack 1, win 4105, options [nop,nop,TS val 853324248 ecr 2241431756], length 0
+17:01:41.329539 IP 10.1.66.73.60563 > 183.232.24.115.http: Flags [P.], seq 1:1067, ack 1, win 4105, options [nop,nop,TS val 853324248 ecr 2241431756], length 1066
+17:01:41.333819 IP 183.232.24.115.http > 10.1.66.73.60562: Flags [S.], seq 4161401386, ack 12946357, win 14480, options [mss 1300,sackOK,TS val 2241431757 ecr 853324221,nop,wscale 7], length 0
+17:01:41.333835 IP 10.1.66.73.60562 > 183.232.24.115.http: Flags [.], ack 1, win 4105, options [nop,nop,TS val 853324252 ecr 2241431757], length 0
+17:01:41.358112 IP 183.232.24.115.http > 10.1.66.73.60563: Flags [.], ack 1067, win 130, options [nop,nop,TS val 2241431785 ecr 853324248], length 0
+17:01:41.359769 IP 183.232.24.115.http > 10.1.66.73.60563: Flags [P.], seq 1:371, ack 1067, win 130, options [nop,nop,TS val 2241431785 ecr 853324248], length 370
+17:01:41.359772 IP 183.232.24.115.http > 10.1.66.73.60563: Flags [.], seq 371:1659, ack 1067, win 130, options [nop,nop,TS val 2241431785 ecr 853324248], length 1288
+17:01:41.359773 IP 183.232.24.115.http > 10.1.66.73.60563: Flags [.], seq 1659:2947, ack 1067, win 130, options [nop,nop,TS val 2241431785 ecr 853324248], length 1288
+17:01:41.359775 IP 183.232.24.115.http > 10.1.66.73.60563: Flags [.], seq 4235:5523, ack 1067, win 130, options [nop,nop,TS val 2241431785 ecr 853324248], length 1288
+17:01:41.359776 IP 183.232.24.115.http > 10.1.66.73.60563: Flags [.], seq 2947:4235, ack 1067, win 130, options [nop,nop,TS val 2241431785 ecr 853324248], length 1288
+17:01:41.359777 IP 183.232.24.115.http > 10.1.66.73.60563: Flags [.], seq 6811:8099, ack 1067, win 130, options [nop,nop,TS val 2241431785 ecr 853324248], length 1288
+17:01:41.359778 IP 183.232.24.115.http > 10.1.66.73.60563: Flags [.], seq 5523:6811, ack 1067, win 130, options [nop,nop,TS val 2241431785 ecr 853324248], length 1288
+17:01:41.359780 IP 183.232.24.115.http > 10.1.66.73.60563: Flags [.], seq 8099:9387, ack 1067, win 130, options [nop,nop,TS val 2241431785 ecr 853324248], length 1288
+17:01:41.359781 IP 183.232.24.115.http > 10.1.66.73.60563: Flags [.], seq 9387:10675, ack 1067, win 130, options [nop,nop,TS val 2241431785 ecr 853324248], length 1288
+17:01:41.359810 IP 10.1.66.73.60563 > 183.232.24.115.http: Flags [.], ack 371, win 4093, options [nop,nop,TS val 853324277 ecr 2241431785], length 0
+17:01:41.359840 IP 10.1.66.73.60563 > 183.232.24.115.http: Flags [.], ack 2947, win 4013, options [nop,nop,TS val 853324277 ecr 2241431785], length 0
+17:01:41.359850 IP 10.1.66.73.60563 > 183.232.24.115.http: Flags [.], ack 2947, win 4025, options [nop,nop,TS val 853324277 ecr 2241431785,nop,nop,sack 1 {4235:5523}], length 0
+17:01:41.359861 IP 10.1.66.73.60563 > 183.232.24.115.http: Flags [.], ack 5523, win 4015, options [nop,nop,TS val 853324277 ecr 2241431785], length 0
+17:01:41.359875 IP 10.1.66.73.60563 > 183.232.24.115.http: Flags [.], ack 5523, win 4015, options [nop,nop,TS val 853324277 ecr 2241431785,nop,nop,sack 1 {6811:8099}], length 0
+17:01:41.359882 IP 10.1.66.73.60563 > 183.232.24.115.http: Flags [.], ack 8099, win 3935, options [nop,nop,TS val 853324277 ecr 2241431785], length 0
+17:01:41.359891 IP 10.1.66.73.60563 > 183.232.24.115.http: Flags [.], ack 10675, win 3854, options [nop,nop,TS val 853324277 ecr 2241431785], length 0
+17:01:41.361359 IP 10.1.66.73.60563 > 183.232.24.115.http: Flags [.], ack 10675, win 4096, options [nop,nop,TS val 853324278 ecr 2241431785], length 0
+17:01:41.366351 IP 10.1.66.73.60562 > 183.232.24.115.http: Flags [P.], seq 1:1047, ack 1, win 4105, options [nop,nop,TS val 853324282 ecr 2241431757], length 1046
