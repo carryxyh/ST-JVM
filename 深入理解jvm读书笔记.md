@@ -35,3 +35,11 @@ minor gc之前，虚拟机会先检查`老年代最大可用的连续空间`是�
 
 #### 关于类加载器的双亲委派模型
 破坏类的双亲委派，可以通过给Thread设置contextClassLoader。如果创建线程时没有则从父线程继承一个。这个设计的主要原因是为了让父类加载器能够识别子加载器的类。
+
+#### 关于线上GC问题排查的参数
+-XX:+PrintGC 输出GC日志
+-XX:+PrintGCDetails 输出GC的详细日志
+-XX:+PrintGCTimeStamps 输出GC的时间戳（以基准时间的形式）
+-XX:+PrintGCDateStamps 输出GC的时间戳（以日期的形式，如2013-05-04T21:53:59.234+0800）
+-XX:+PrintHeapAtGC 在进行GC的前后打印出堆的信息
+-Xloggc:../logs/gc.log 日志文件的输出路径
